@@ -1,0 +1,31 @@
+
+
+#principal-about{
+    display: flex;
+    margin:8rem auto 0 auto;
+    width: 40%;
+    align-items: baseline;
+
+}
+#profile-photo{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    
+}
+#about{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+}
+
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+#contact img{
+    width: 2rem;
+    height: 2rem;
+}

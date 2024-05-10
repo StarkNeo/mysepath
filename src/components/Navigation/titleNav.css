@@ -1,0 +1,127 @@
+/*TitleBar Styles*/
+#title-Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10%;
+    color: black;
+    border-bottom: 1px solid gainsboro;
+    position: fixed;
+    background-color: white;
+    top: 0%;
+    z-index: 999;
+    
+}
+
+#list-nav {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    background-color: yellow;
+    justify-content: space-around;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 100%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Search Styles*/
+
+#search-bar{
+    display: flex;
+    width: 50%;
+    background-color:azure;
+}
+
+.search-btn{
+    outline: none;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    
+}
+.lupa{
+    width: 20px;
+    cursor: pointer;
+}
+
+
+#title-nav-left{
+    cursor: pointer;
+}
+
+#visit{
+    color: chocolate;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+
+.navigation {
+    background-color: hsl(223, 90%, 4%);
+    border-bottom: 3px solid deepskyblue;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    
+}
+#nav-links {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    padding: 6px 24px;
+    font-size: 1.5rem;
+}
+
+.nav-link-active {
+    border: 2px solid deepskyblue;
+    color: deepskyblue;
+    background-color: black;
+
+}
+
+.link {
+    display: flex;
+}
+
+@media only screen and (max-width:842px){
+    .link a{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:566px){
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width:794px){
+    #visit{
+        display: none;
+
+    }
+    #search-bar{
+        width: 72%;
+    }
+}

@@ -1,0 +1,25 @@
+#main-content{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+details{
+    margin: auto;
+    width: 100%;
+    margin-top: 5rem;
+}
+summary{
+    text-align: center;
+}
+.subjects{
+    font-weight: bolder;
+    
+    width: fit-content;
+    margin: auto;
+}
+.asigments{
+    font-style: italic;
+}
