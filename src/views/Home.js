@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { Main } from "./Main";
 import { topics } from "../services/topics";
 import { Tareas } from "./Tareas";
+import { Desarrollos } from "./Desarrollos";
 
 export const Home =()=>{
     const [views, setViews]= useState(null);
@@ -27,8 +28,8 @@ export const Home =()=>{
         case "Tareas":
             renderView =<Tareas />;
             break;
-        case "En construccion":
-            renderView ='no disponible';
+        case "Desarrollos":
+            renderView =<Desarrollos />;
             break;    
         default:
             renderView=<Main />;

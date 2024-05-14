@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 
 export const TitleNav = () => {
     const [temas, setTemas] = useState([]);
-    console.log(temas);
     useEffect(() => {
         setTemas(topics);
     }, []);

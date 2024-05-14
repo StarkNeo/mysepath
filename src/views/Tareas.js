@@ -1,5 +1,6 @@
 import React from "react";
 import './tareas.css';
+
 export const Tareas = () => {
 
 

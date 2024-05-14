@@ -13,8 +13,8 @@ export const topics =[
     
     {
         id:3,
-        type:"En construccion",
-        subtype:["No disponible"]
+        type:"Desarrollos",
+        subtype:["Convertidor"]
     },
     
     /*

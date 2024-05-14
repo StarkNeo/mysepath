@@ -1,0 +1,25 @@
+#convertir-sistemas{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+}
+.converter-fields{
+    display: flex;
+    justify-content:space-between ;
+}
+#base{
+    width: 32%;
+    height: fit-content;
+    text-align: center;
+}
+#numero-decimal{
+    width: 30%;
+    height: fit-content;
+    text-align: center;
+}
+
+input[type='submit']{
+    width: 20%;
+    margin:auto;
+}
