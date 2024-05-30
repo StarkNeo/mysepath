@@ -32,7 +32,7 @@ export const Main = () => {
                 </div>
 
             </section>
-
+            
         </div>
 
     )

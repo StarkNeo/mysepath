@@ -1,15 +1,25 @@
 import React from "react";
+import { useState,useEffect } from "react";
 import './tareas.css';
-
+import { documents } from "../services/worksList";
 export const Tareas = () => {
-
-
+    const [articles, setArticles]=useState(null);
+    useEffect(()=>{
+        setArticles(documents)
+    },[])
+    
     return (
         <div id="main-content">
             
            <details>
             <summary className="subjects">Fundamentos de Programacion II</summary>
-            
+            {articles === null? <h1>No Elements</h1>: articles.map(element=>(
+            <>
+            <a key={element.id} href={element.location} download={element.location}>{element.assigmentName}</a>
+            <br/>
+            </>
+            ))}
+
            </details>
            <details>
             <summary className="subjects">Estructuras Algebraicas</summary>

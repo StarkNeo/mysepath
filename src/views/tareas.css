@@ -7,19 +7,25 @@
 }
 
 details{
+    display: flex;
     margin: auto;
     width: 100%;
     margin-top: 5rem;
+    
 }
 summary{
     text-align: center;
+    padding-bottom: 1rem;
 }
 .subjects{
-    font-weight: bolder;
-    
+    font-weight: bolder;    
     width: fit-content;
     margin: auto;
 }
 .asigments{
     font-style: italic;
+}
+details a{
+    width: fit-content;
+    margin: auto;
 }
