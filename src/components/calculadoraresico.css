@@ -1,0 +1,147 @@
+/*FORM CALCULADORA RESICO STYLES*/
+
+#calculadora-resico{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+#resico-title, #resico-subtitle{
+    text-align: center;
+}
+
+.resico-fieldset {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+label {
+    width: 50%;
+}
+
+input {
+    padding: 6px 12px 6px 12px;
+    border: 1px solid #665544;
+    color: black;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#btn-submit{
+    width: 50%;
+}
+
+#borrar{
+    width: auto;
+    font-size: 11px;
+}
+
+input[type="submit"] {
+    font-size: 0.7rem;
+    text-align: center;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #665544;
+    color: white;
+}
+
+input[type="submit"]:active {
+    background-color: chocolate;
+}
+
+input[type="number"] {
+    color: black;
+}
+
+input[type="number"]:focus {
+    background-color: blue;
+    color: white;
+    outline-color: white;
+}
+
+#resultado {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+    
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: right;
+}
+
+th.left,
+td.left {
+    text-align: left;
+}
+
+thead {
+    background-color: rgb(119, 119, 167);
+    color: white;
+}
+
+#isr-cargo {
+    background-color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 938px) {
+    #calculadora-resico {
+        margin-top: 5rem;
+        width: 70%;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px black;
+        color: white;
+    }
+
+}
+
+@media only screen and (max-width:575px) {
+    #calculadora-resico {
+        margin-top: 5rem;
+        width: 80%;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px black;
+        color: white;
+    }
+
+       
+    
+}
+
+@media only screen and (max-width:474px) {
+    #calculadora-resico {
+        margin-top: 5rem;
+        width: 95%;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px black;
+        color: white;
+        font-size: 12px;
+    }
+
+    input[type="submit"] {
+        width: 70%;
+    }
+}
