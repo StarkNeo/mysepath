@@ -1,20 +1,29 @@
+#main-div{
+    width: 100%;
+}
 
+#name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:47px;
+}
 
+#prof{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
 #principal-about{
     display: flex;
-    margin:8rem auto 0 auto;
-    width: 40%;
-    align-items: baseline;
-
+    margin:1rem auto;
+    width: 50%;
+    align-items: center;
 }
 #profile-photo{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
     
 }
 #about{
-    width: 50%;
+    width: 100%;
     margin: auto;
     text-align: justify;
 }

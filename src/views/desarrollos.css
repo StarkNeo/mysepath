@@ -3,24 +3,153 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
-details{
-    margin: auto;
-    width: 100%;
-    margin-top: 5rem;
-}
-summary{
-    text-align: center;
-}
-.subjects{
-    font-weight: bolder;
-    
-    width: fit-content;
-    margin: auto;
-}
+
 .asigments{
     font-style: italic;
+}
+
+/*PROJECT STYLES*/
+
+#body-projects{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#grid {
+    display: block;
+    width: 100%;
+    padding-left: 10%;
+    justify-items: center;
+    margin-top: 8.5rem;
+} 
+
+.project-details{
+    color: black;
+    width: 100%;
+    margin:1rem auto;
+
+}
+
+
+.projects-list {
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    margin: auto;
+    height: auto;
+    font-size: 2rem;
+
+}
+
+.nav-projects-link {
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    padding: 6px 24px;
+    font-size: 5rem;
+}
+
+.link-style {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.link-style:hover{
+    color: blue;
+    font-weight: bold;
+}
+
+.lang-icons {
+    width: 50%;
+    cursor: pointer;
+    transition: width 0.5s linear 0.3ms,
+        transform 0.3s ease 0.3ms;
+}
+
+
+.summary-project{
+    width: fit-content;
+    margin: auto;
+    
+
+}
+.summary-project:hover{
+        border: 2px solid deepskyblue;
+        color: deepskyblue;
+        background-color: black;
+        border-radius: 10px;
+    
+}
+.project-details p{
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width:804px) {
+
+    #grid {
+        display: block;
+        width: fit-content;
+        padding-left: none;
+        justify-items: center;
+        
+    }
+    .link-style{
+        font-size: 0.7rem;
+        
+    }
+  
+    .lang-icons {
+        width: 50%;
+        height: 50%;
+        cursor: pointer;
+        transition: width 0.5s linear 0.3ms,
+            transform 0.3s ease 0.3ms;
+    }
+
+
+}
+
+
+@media only screen and (max-width:728px) {
+
+    #grid {
+        display: block;
+        width: 100%;
+        padding-left: none;
+        justify-items: center;
+    }
+
+    .lang-icons {
+        display: none;
+        
+    }
+
+    .element-carrusel h1{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width:550px){
+    .project-details{
+        width: 90%;
+        
+    }
+
+    .summary-project{
+        font-size: 1rem;
+    }
+
 }
 
