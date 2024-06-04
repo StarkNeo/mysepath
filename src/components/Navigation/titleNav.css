@@ -66,29 +66,36 @@
 }
 
 .navigation {
-    background-color: hsl(223, 90%, 4%);
+    /*background-color: hsl(223, 90%, 4%);*/
     border-bottom: 3px solid deepskyblue;
     display: flex;
+    justify-content: center;
     position: fixed;
     z-index: 999;
-    width: 100%;
-    
+    width: 20%;
+    height: 100vh;    
+    flex-direction: column;
+    background-image: url('../../images/smartground.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #nav-links {
     color: white;
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    width: fit-content;
+    margin: auto;
     padding-left: 0px;
+  
 }
 
 .nav-link {
     color: white;
     text-decoration: none;
     border-radius: 18px;
-    padding: 6px 24px;
+    padding: 15px 24px;
     font-size: 1.5rem;
 }
 
@@ -101,6 +108,17 @@
 
 .link {
     display: flex;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+.contact-img{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    margin-left: 1rem;
 }
 
 @media only screen and (max-width:842px){

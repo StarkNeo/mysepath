@@ -1,178 +1,182 @@
 #carrusel {
-    margin-top: 3rem;
-    background-color: hsl(223, 90%, 4%);
-    width: 100%;
-    overflow: hidden;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
+  margin-top: 3rem;
+  /*background-color: hsl(223, 90%, 4%);*/
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  color: bisque;
+}
+
+
+/*SKILLS BUTTON*/
+
+#title-accordion {
+  display: flex;
+  margin: 1rem auto;
+  width: fit-content;
+  position: relative;
+  color: black;
+  font-weight: bolder;
+  list-style: none;
+  cursor: pointer;
+  animation-name: slideshow;
+  animation-duration: 18s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  overflow: hidden;
+}
+
+
+
+@keyframes slideshow {
+  0% {
+    color: blue;
+  }
+
+  10% {
     color: bisque;
   }
-  .element-carrusel {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: red;
-    animation: test 5s infinite;
+
+  20% {
+    color: blueviolet;
   }
+
+  30% {
+    color: brown;
+  }
+
+  40% {
+    color: burlywood;
+
+  }
+
+  50% {
+    color: cadetblue;
+  }
+
+  60% {
+    color: chartreuse;
+
+  }
+
+  70% {
+    color: chocolate;
+
+  }
+
+  80% {
+    color: cornflowerblue;
+
+  }
+
+  90% {
+    color: tomato;
+
+  }
+
+  100% {
+    color: white;
+
+  }
+}
+
+
+#skills-list {
+  margin-top: 1rem;
+
+}
+
+#weblist,
+#dclist {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#accordion h3 a{
+  color: black;
+  font-weight: bolder;
+}
+
+#weblist,
+#dclist {
+  height: 0px;
+  transition: height 1s ease-in-out;
+  color: tomato;
+  font-weight: bold;
+}
+
+
+
+@keyframes innerSlide {
+  from {
+    right: -100%;
+    opacity: 1;
+    font-size: 15px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+.skill-imagen {
+  width: 40%;
+  height: 40%;
+  background-color: transparent;
+
+}
+
+.skill-name {
+  font-size: 20px;
+  color: yellow;
+  text-align: center;
+
+}
+
+#accordion {
+  margin-top: 4.7rem;
   
   
-  
-  .innerCarrusel {
-    width: 50%;
+}
+#accordion h3{
+  width: fit-content;
+  margin: auto;
+}
+
+#accordion div {
+  overflow: hidden;
+  height: 0;
+  transition: height 1s ease-in-out;
+  /*Display softly*/
+
+}
+
+#accordion div:target {
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width:351px) {
+  #carrusel {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    /*animation-name: innerSlide;
-    animation-duration: 15s;
-    animation-delay: 0ms;
-    animation-iteration-count: infinite;
-    animation-direction:normal;
-    animation-timing-function:ease-out;
-    overflow: hidden;
-    */
-  }
-  
-  #trending {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0px;
-    width: 100px;
-    position: relative;
-    color: black;
-    font-weight: bolder;
-    list-style: none;
-    background-color: bisque;
-    /*animation-name: slideshow;
-    animation-duration: 18s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-timing-function: ease;
-    overflow: hidden;*/
-  }
-
-  @keyframes slideshow {
-    0% {
-      background-color: blue;
-      color: white;
-    }
-  
-    10% {
-      background-color: bisque;
-      color: black;
-    }
-  
-    20% {
-      background-color: blueviolet;
-      color: white;
-    }
-  
-    30% {
-      background-color: brown;
-      color: white;
-    }
-  
-    40% {
-      background-color: burlywood;
-      color: black;
-      
-    }
-  
-    50% {
-      background-color: cadetblue
-    }
-  
-    60% {
-      background-color: chartreuse;
-      color: black;
-    }
-  
-    70% {
-      background-color: chocolate;
-      color: white;
-    }
-  
-    80% {
-      background-color: cornflowerblue;
-      color: black;
-    }
-  
-    90% {
-      background-color: tomato;
-      color: black;
-    }
-  
-    100% {
-      background-color: black;
-      color: white;
-
-    }
-  }
-  
-  
-  #test-skill{
-    animation-name: test;
-    animation-duration: 2000;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    /*animation-direction: normal;
-    animation-timing-function: ease-out;
-    */
-  }
-
-  #test-btn{
-    transition: font-size 2s ease-out 2s,color 2s ease-in 1s;
-  }
-  #test-btn:hover{
-    color: whitesmoke;
-  }
-
-  #skills-list{
-    margin-top: 1rem;
-  }
-  #skills-list ul{
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     width: 100%;
   }
-
-  .list-title{
-    text-align: center;
-  }
-  @keyframes innerSlide{
-    from{
-      right: -100%;
-      opacity: 1;
-      font-size: 15px;
-    }
-    to{
-      right:100%;
-    }
-  }
-  
-  .skill-imagen {
-    width: 40%;
-    height: 40%;
-    background-color: transparent;
-  
-  }
-  .skill-name {
-    font-size: 20px;
-    color: yellow;
-    text-align: center;
-  
-  }
-
-
-  @media only screen and (max-width:351px){
-    #carrusel{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
 }

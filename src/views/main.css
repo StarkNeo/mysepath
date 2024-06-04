@@ -1,5 +1,8 @@
+
 #main-div{
-    width: 100%;
+    width: 80%;
+    height: 100vh;
+    margin: 0% 20%;
 }
 
 #name{
@@ -18,7 +21,8 @@
     align-items: center;
 }
 #profile-photo{
-    width: 25rem;
+    width: auto;
+    
     height: 25rem;
     
 }
@@ -33,6 +37,7 @@
     display: flex;
     justify-content: space-around;
     margin: auto;
+    color: bisque;
 }
 #contact img{
     width: 2rem;

@@ -76,7 +76,7 @@ export const webSkills = [
     {
         id: 5,
         image_path: arrayImagesSkills[14],
-        skill_name: "ReactJS",
+        skill_name: "React",
 
     },
     {
@@ -85,18 +85,6 @@ export const webSkills = [
         skill_name: "SQL",
 
     },
-    {
-        id: 7,
-        image_path: arrayImagesSkills[8],
-        skill_name: "GIT",
-
-    },
-
-    {
-        id: 8,
-        image_path: arrayImagesSkills[9],
-        skill_name: "Visual Studio",
-
-    },
+    
  
 ]

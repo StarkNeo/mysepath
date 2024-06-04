@@ -7,22 +7,27 @@ export const Carousel = () => {
     const [skillsData, setSkillsData] = useState(dataScienceSkills);
     const [array, setArray] = useState(webSkills);
     return (
-        <section id="carrusel">
-
-            <div id="skills-list">
-                <h2 className="list-title">Web Development</h2>
-                <ul id="trending">
+        <div id="accordion">
+            <h1 id="title-accordion">Skills</h1>
+            <h3><a href="#web">Web Development</a></h3>
+            <div id="web">
+                <ul id="weblist">
                     {array.map(element => (<li key={element.id}>{element.skill_name}</li>))}
 
                 </ul>
-                <h2 className="list-title">Data Science</h2>
-                <ul className="innerCarrusel">
+
+            </div>
+            <h3><a href="#dc">Data Science</a></h3>
+            <div id="dc">
+                <ul id="dclist">
                     {skillsData.map(element => (<li key={element.id}>{element.skill_name}</li>))}
 
                 </ul>
 
             </div>
 
-        </section>
+        </div>
+
+
     )
 }
